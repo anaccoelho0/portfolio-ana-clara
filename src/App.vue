@@ -1,6 +1,7 @@
 <script setup>
 import NavBar from './components/NavBar.vue'
-import Carrossel from './components/Carrossel.vue'
+import Topicos from './components/Topicos.vue';
+
 
 </script>
 
@@ -8,7 +9,7 @@ import Carrossel from './components/Carrossel.vue'
 
   <router-view />
   <NavBar />
-  <Carrossel />
+  <Topicos />
 
 </template>
 
