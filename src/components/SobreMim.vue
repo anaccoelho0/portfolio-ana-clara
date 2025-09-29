@@ -1,24 +1,30 @@
 <template>
-<header id="page-top" class="masthead bg-primary text-white text-center" style="background-color: #FAD4E6 !important;">
-    <div class="container d-flex align-items-center flex-column">
-      <img class="masthead-avatar mb-5 rounded-circle" src="../assets/img/perfil.jpg" alt="Ana Clara Coelho" style="border: 3px solid #E8B4B8; width: 150px; height: 150px; object-fit: cover;" />
-      <h1 class="masthead-heading text-uppercase mb-0" style="color: #333;">Ana Clara Coelho</h1>
+  <!-- Seção Sobre Mim -->
+  <section class="page-section portfolio" id="experiencia" style="background-color: #F4F6F7;">
+    <div class="container d-flex flex-column align-items-center">
+
+      <!-- Título -->
+      <h3 class="page-section-heading text-center text-uppercase text-secondary" style="color: #333;">SOBRE MIM</h3>
+
+      <!-- Divisão por listrinha -->
       <div class="divider-custom divider-light">
         <div class="divider-custom-line" style="background-color: #E8B4B8;"></div>
         <div class="divider-custom-icon" style="color: #E8B4B8;"><i class="fas fa-star"></i></div>
         <div class="divider-custom-line" style="background-color: #E8B4B8;"></div>
       </div>
-      <p class="masthead-subheading font-weight-light mb-0" style="color: #333;">Desenvolvedora Web | Designer | Criativa</p>
+
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <p class="lead" style="color: #5D6D7E;">
+            Olá! Sou Ana Clara Coelho, desenvolvedora web apaixonada por tecnologia e design.
+          </p>
+        </div>
+      </div>
     </div>
-  </header> 
+  </section>
 </template>
 
 <style scoped>
-.masthead {
-  padding-top: calc(6rem + 74px);
-  padding-bottom: 6rem;
-}
-
 .page-section {
   padding: 6rem 0;
 }
@@ -37,7 +43,6 @@
   height: 0.25rem;
   background-color: #E8B4B8;
   border-radius: 1rem;
-  border-color: #E8B4B8 !important;
 }
 
 .divider-custom .divider-custom-icon {
@@ -46,18 +51,16 @@
   margin: 0 1.5rem;
 }
 
-.card {
-  border: 1px solid #E8B4B8;
-}
-
-.btn-social {
-  border-width: 2px;
+.lead {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.125rem;
+  color: #5D6D7E;
+  line-height: 1.6;
 }
 </style>
 
-
 <script>
 export default {
-  name: 'NavBar'
+  name: 'SobreMim'
 }
 </script>
