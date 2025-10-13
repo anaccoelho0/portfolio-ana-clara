@@ -1,6 +1,14 @@
-<script setup>
+<script>
+import { RouterView } from 'vue-router'; 
 import Header from './components/Header.vue';
-import HeroSection from './components/HeroSection.vue';
+
+export default {
+    
+    components: {
+        Header,
+        RouterView
+    }
+}
 </script>
 
 <template>
@@ -8,7 +16,8 @@ import HeroSection from './components/HeroSection.vue';
     <main class="main-content-wrapper">
       <div class="card-container">
         <Header />
-        <HeroSection />
+        
+        <RouterView />
       </div>
     </main>
   </div>

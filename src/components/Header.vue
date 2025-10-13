@@ -4,15 +4,16 @@
       <span class="logo-ac">AC</span> <span class="logo-name">Ana Clara Coelho</span>
     </div>
     <nav class="nav-links">
-      <a href="#inicio" class="nav-item active">Início</a>
-      <a href="#sobre">Sobre Mim</a>
-      <a href="#contato">Contato</a>
+     <RouterLink :to="{ name: 'Home' }" class="nav-item">Início</RouterLink>
+      <RouterLink :to="{ name: 'SobreMim' }" class="nav-item">Sobre Mim</RouterLink>
+      <RouterLink :to="{ name: 'Projetos' }" class="nav-item">Projetos</RouterLink>
+      <RouterLink :to="{ name: 'Contato' }" class="nav-item">Contato</RouterLink>
     </nav>
   </header>
 </template>
 
 <script setup>
-// Não precisa de script se não houver lógica
+
 </script>
 
 <style scoped>

@@ -1,41 +1,45 @@
+
+
 import { createRouter, createWebHistory } from 'vue-router';
 
-import HomeView from '@/views/HomeView.vue';
-const SobreMimView = () => import('@/views/SobreMimView.vue'); 
-const ProjetosView = () => import('@/views/ProjetosView.vue');
-const ContatoView = () => import('@/views/ContatoView.vue');
+// Importa os componentes das suas views (páginas)
+import HomeView from '../views/HomeView.vue';
+// Importação dinâmica (melhor para performance)
+const SobreMimView = () => import('../views/SobreMimView.vue'); 
+const ProjetosView = () => import('../views/ProjetosView.vue');
+const ContatoView = () => import('../views/ContatoView.vue');
 
 const routes = [
   {
     path: '/',
-    name: 'Home', 
+    name: 'Home', // Nome usado no RouterLink do Header.vue
     component: HomeView,
     meta: { title: 'Ana Clara | Desenvolvedora & UX' }
   },
   {
     path: '/sobre',
-    name: 'SobreMim', /
+    name: 'SobreMim', // Nome usado no RouterLink do Header.vue
     component: SobreMimView,
     meta: { title: 'Ana Clara | Sobre Mim' }
   },
   {
     path: '/projetos',
-    name: 'Projetos', 
+    name: 'Projetos', // Nome usado no RouterLink do Header.vue
     component: ProjetosView,
     meta: { title: 'Ana Clara | Projetos' }
   },
   {
     path: '/contato',
-    name: 'Contato', 
+    name: 'Contato', // Nome usado no RouterLink do Header.vue
     component: ContatoView,
     meta: { title: 'Ana Clara | Contato' }
   },
 ];
 
 const router = createRouter({
-  history: createWebHistory,
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
-  
+  // Para que a página sempre comece no topo ao mudar de rota
   scrollBehavior(to, from, savedPosition) {
     return { top: 0 };
   },

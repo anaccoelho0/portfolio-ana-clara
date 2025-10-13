@@ -12,7 +12,9 @@
           Criando experiências digitais que encantam e funcionam.
         </p>
         
-        <button class="btn-primary">Ver Projetos</button>
+                <RouterLink :to="{ name: 'Projetos' }" class="btn-link">
+          <button class="btn-primary">Ver Projetos</button>
+        </RouterLink>
         
         <div class="social-links">
           <a href="#" aria-label="LinkedIn">in</a>
@@ -24,7 +26,10 @@
   </section>
 </template>
 
-<script setup>
+<script setup >
+
+import perfilFoto from '../assets/img/perfil.jpg'; 
+
 </script>
 
 <style scoped>
