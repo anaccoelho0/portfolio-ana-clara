@@ -15,13 +15,13 @@
 
 <script setup>
 import { ref } from 'vue';
-import ProjectCard from '../components/ProjectCard.vue'; // Ajuste o caminho
+import ProjectCard from '../components/ProjectCard.vue'; // Caminho que já funciona
 
-// ⭐️ IMPORTAÇÃO DAS IMAGENS ⭐️
-// Você precisa ter certeza de que esses caminhos estão corretos!
-import siteConfeitaria from '@/assets/img/site1.jpg'; // Confeitaria
-import siteTupiFlix from '@/assets/img/site2.jpg';   // TupiFlix
-import sitePerfumaria from '@/assets/img/site3.jpg'; // Perfumaria
+// ⭐️ USE CAMINHOS RELATIVOS PARA IMAGENS ⭐️
+// Se o views e assets estão dentro de src/, use:
+import siteConfeitaria from '../assets/img/site1.jpg'; 
+import siteTupiFlix from '../assets/img/site2.jpg';
+import sitePerfumaria from '../assets/img/site3.jpg';
 
 const projects = ref([
   {

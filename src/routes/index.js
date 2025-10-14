@@ -5,7 +5,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 // Importa os componentes das suas views (páginas)
 import HomeView from '../views/HomeView.vue';
 // Importação dinâmica (melhor para performance)
-const SobreMimView = () => import('../views/SobreMimView.vue'); 
+const SobreMimView = () => import('../views/SobreMimView.vue');
 const ProjetosView = () => import('../views/ProjetosView.vue');
 const ContatoView = () => import('../views/ContatoView.vue');
 
@@ -20,7 +20,7 @@ const routes = [
     path: '/sobre',
     name: 'SobreMim', // Nome usado no RouterLink do Header.vue
     component: SobreMimView,
-    meta: { title: 'Ana Clara | Sobre Mim' }
+    meta: { title: 'Ana Clara | About Me' }
   },
   {
     path: '/projetos',
@@ -32,7 +32,7 @@ const routes = [
     path: '/contato',
     name: 'Contato', // Nome usado no RouterLink do Header.vue
     component: ContatoView,
-    meta: { title: 'Ana Clara | Contato' }
+    meta: { title: 'Ana Clara | Contact' }
   },
 ];
 

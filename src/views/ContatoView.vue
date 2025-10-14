@@ -1,11 +1,7 @@
 <template>
-  <div>
-    <h1>Entre em Contato</h1>
-    </div>
+  <Contact />
 </template>
 
 <script setup>
+import Contact from '../components/Contact.vue';
 </script>
-
-<style scoped>
-</style>
