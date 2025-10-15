@@ -24,7 +24,6 @@
 <script setup>
 import { defineProps } from 'vue';
 
-// ⭐️ Propriedades recebidas pelo componente (usando Options API para compatibilidade ou setup para modernidade)
 defineProps({
   project: {
     type: Object,

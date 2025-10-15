@@ -4,7 +4,7 @@
       
       <div class="contact-header">
         <h2 class="section-title">Fale Comigo</h2>
-        <h1 class="main-heading">Vamos Criar Algo Incrível Juntas.</h1>
+        <h1 class="main-heading">Vamos Criar Algo Incrível Juntos.</h1>
         <p class="paragraph">
           Se você tem uma nova ideia de projeto, uma oportunidade de emprego ou apenas quer dizer um "olá", adoraria conversar. Minha caixa de entrada está sempre aberta!
         </p>
@@ -15,7 +15,7 @@
         <a href="mailto:ana.clara.dev@email.com" class="contact-card email-card" target="_blank">
             <i class="icon fas fa-envelope"></i>
             <h3>E-mail</h3>
-            <p>anaclaralcoelho2006@email.com</p>
+            <p>anaclaralcoelho2006@gmail.com</p>
             <span class="action-link">Enviar E-mail &rarr;</span>
         </a>
 

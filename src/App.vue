@@ -6,7 +6,8 @@ export default {
     
     components: {
         Header,
-        RouterView
+        RouterView,
+
     }
 }
 </script>

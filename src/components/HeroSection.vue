@@ -17,9 +17,8 @@
         </RouterLink>
         
         <div class="social-links">
-          <a href="#" aria-label="LinkedIn">in</a>
-          <a href="#" aria-label="GitHub">gh</a>
-          <a href="#" aria-label="Twitter">tw</a>
+          <a href="https://www.linkedin.com/in/ana-clara-lopes-coelho-da-silva-070460232" aria-label="LinkedIn">in</a>
+          <a href="https://github.com/anaccoelho0" aria-label="GitHub">gh</a>
         </div>
       </div>
     </div>
@@ -28,7 +27,6 @@
 
 <script setup >
 
-import perfilFoto from '../assets/img/perfil.jpg'; 
 
 </script>
 

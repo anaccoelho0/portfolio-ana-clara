@@ -17,8 +17,7 @@
 import { ref } from 'vue';
 import ProjectCard from '../components/ProjectCard.vue'; // Caminho que já funciona
 
-// ⭐️ USE CAMINHOS RELATIVOS PARA IMAGENS ⭐️
-// Se o views e assets estão dentro de src/, use:
+
 import siteConfeitaria from '../assets/img/site1.jpg'; 
 import siteTupiFlix from '../assets/img/site2.jpg';
 import sitePerfumaria from '../assets/img/site3.jpg';
@@ -36,14 +35,14 @@ const projects = ref([
     description: 'Interface de streaming inspirada na Netflix, trazendo o design moderno para o universo das lendas brasileiras (Saci-Pererê).',
     techs: ['Vue.js', 'Tailwind CSS', 'API de Conteúdo'],
     imageSrc: siteTupiFlix,
-    link: 'https://seusite.com/tupiflix', // Substitua pelo link real
+    link: 'https://projeto-netflix-xi.vercel.app/', // Substitua pelo link real
   },
   {
     title: 'Perfumaria Boutique Ana Clara',
     description: 'E-commerce com foco em identidade e sofisticação, apresentando o catálogo de perfumes com um toque de luxo e cores suaves.',
     techs: ['HTML5', 'SASS', 'Responsividade'],
     imageSrc: sitePerfumaria,
-    link: 'https://seusite.com/perfumaria', // Substitua pelo link real
+    link: 'https://perfumes-da-ana.vercel.app/', // Substitua pelo link real
   },
 ]);
 </script>
